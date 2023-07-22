@@ -1,4 +1,6 @@
-const prompt = require ('Prompt-Sync')()
+import promptSync from "prompt-sync";
+
+const prompt = promptSync();
 
 let ex = parseInt (prompt("Escolha o exercício que deseja visualizar: "))
 

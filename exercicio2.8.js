@@ -3,7 +3,10 @@
 //idade e mostre uma mensagem quando a idade do usuário for
 //maior que 18.
 
-let prompt = require("prompt-sync")()
+import promptSync from "prompt-sync";
+const prompt = promptSync();
+
+export function confirmarIdade() {
 
 let idade;
 
@@ -12,3 +15,10 @@ do {
 } while (idade < 18)
 
 console.log ("Usuário maior de 18 anos")
+}
+
+//confirmarIdade();
+
+//export function verificarMaiorIdade() {
+    
+//}
